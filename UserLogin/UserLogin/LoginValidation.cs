@@ -8,12 +8,21 @@ namespace UserLogin
 {
     class LoginValidation
     {
+        string username;
+        string password;
+        string errorMessage;
         public static UserRole currentUserRole
         {
             get;
             private set;
         }
         public LoginValidation() { }
+
+        public LoginValidation(string username, string password)
+        {
+            this.username = username;
+            this.password = password;
+        }
 
         public bool validateUserInput()
         {
