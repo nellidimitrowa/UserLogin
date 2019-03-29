@@ -14,6 +14,7 @@ namespace UserLogin
             if (loginValidation.validateUserInput())
             {
                 Console.WriteLine(UserData.TestUser);
+                Console.WriteLine(LoginValidation.currentUserRole);
             }
             Console.ReadKey();
         }
