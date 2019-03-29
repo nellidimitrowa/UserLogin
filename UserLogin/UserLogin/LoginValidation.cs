@@ -26,6 +26,27 @@ namespace UserLogin
 
         public bool validateUserInput(ref User user)
         {
+            if (username.Equals(String.Empty) == true)
+            {
+                errorMessage = "The username is empty";
+                return false;
+            }
+
+            if (password.Equals(String.Empty) == true)
+            {
+                errorMessage = "The password is empty";
+                return false;
+            }
+            if (username.Length < 5)
+            {
+                errorMessage = "The username is less than 5 characters";
+                return false;
+            }
+            if (password.Length < 5)
+            {
+                errorMessage = "The password is less than 5 characters";
+                return false;
+            }
             user = UserData.TestUser;
             currentUserRole = (UserRole)user.userRole;
             return true;
