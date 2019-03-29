@@ -10,8 +10,12 @@ namespace UserLogin
     {
         static void Main(string[] args)
         {
+            LoginValidation loginValidation = new LoginValidation();
             User user = new User("nedyalka", "password", "121212605", 1);
-            Console.WriteLine(user);
+            if (loginValidation.validateUserInput())
+            {
+                Console.WriteLine(user);
+            }
             Console.ReadKey();
         }
     }
