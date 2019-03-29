@@ -10,6 +10,9 @@ namespace UserLogin
     {
         static void Main(string[] args)
         {
+            User user = new User("nedyalka", "password", "121212605", 1);
+            Console.WriteLine(user);
+            Console.ReadKey();
         }
     }
 }
