@@ -8,11 +8,16 @@ namespace UserLogin
 {
     static class UserData
     {
-        public static User TestUser;
+        private static User _testUser;
+        public static User TestUser
+        {
+            get { resetTestUserData(); return _testUser; }
+            set { }
+        }
 
         private static void resetTestUserData()
         {
-            TestUser = new User("nedyalka", "password", "121212605", 1);
+            _testUser = new User("nedyalka", "password", "121212605", 1);
         }
     }
 }

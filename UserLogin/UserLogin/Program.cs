@@ -13,7 +13,7 @@ namespace UserLogin
             LoginValidation loginValidation = new LoginValidation();
             if (loginValidation.validateUserInput())
             {
-                Console.WriteLine(user);
+                Console.WriteLine(UserData.TestUser);
             }
             Console.ReadKey();
         }
