@@ -21,5 +21,17 @@ namespace UserLogin
             _testUsers[1] = new User("boyana", "password", "125456456", 4);
             _testUsers[2] = new User("dimitar", "password", "12132155", 4);
         }
+
+        private static User isUserPassCorrect(string username, string password)
+        {
+            for (int i = 0; i < TestUsers.Length; i++)
+            {
+                if (username.Equals(_testUsers[i].username) && password.Equals(_testUsers[i].password))
+                {
+                    return _testUsers[i];
+                }
+            }
+            return null;
+        }
     }
 }

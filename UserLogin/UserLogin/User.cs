@@ -8,12 +8,10 @@ namespace UserLogin
 {
     class User
     {
-        string username;
-        string password;
-        string facultyNumber;
+        public string username;
+        public string password;
+        public string facultyNumber;
         public int userRole;
-
-        public User() { }
 
         public User() { }
 
