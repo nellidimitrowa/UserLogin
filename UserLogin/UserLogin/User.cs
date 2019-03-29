@@ -15,6 +15,8 @@ namespace UserLogin
 
         public User() { }
 
+        public User() { }
+
         public User(string username, string password, string facultyNumber, int userRole)
         {
             this.username = username;
