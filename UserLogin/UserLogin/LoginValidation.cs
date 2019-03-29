@@ -24,8 +24,9 @@ namespace UserLogin
             this.password = password;
         }
 
-        public bool validateUserInput()
+        public bool validateUserInput(ref User user)
         {
+            user = UserData.TestUser;
             return true;
         }
     }
