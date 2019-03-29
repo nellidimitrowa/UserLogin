@@ -19,7 +19,11 @@ namespace UserLogin
             if (loginValidation.validateUserInput(ref user))
             {
                 Console.WriteLine(user);
-                Console.WriteLine(LoginValidation.currentUserRole);
+                LoginValidation.printCurrentUserRole();
+            }
+            else
+            {
+                Console.WriteLine(loginValidation.errorMessage);
             }
             Console.ReadKey();
         }

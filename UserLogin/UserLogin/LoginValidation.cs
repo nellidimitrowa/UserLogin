@@ -10,7 +10,7 @@ namespace UserLogin
     {
         string username;
         string password;
-        string errorMessage;
+        public string errorMessage;
         public static UserRole currentUserRole
         {
             get;
@@ -37,19 +37,50 @@ namespace UserLogin
                 errorMessage = "The password is empty";
                 return false;
             }
+
             if (username.Length < 5)
             {
                 errorMessage = "The username is less than 5 characters";
                 return false;
             }
+
             if (password.Length < 5)
             {
                 errorMessage = "The password is less than 5 characters";
                 return false;
             }
-            user = UserData.TestUser;
-            currentUserRole = (UserRole)user.userRole;
+
+            user = UserData.isUserPassCorrect(username, password);
+            if (user == null)
+            {
+                errorMessage = "There is no user with these username or password";
+                return false;
+            }
+
+            currentUserRole = UserRole.ANONYMOUS;
             return true;
+        }
+
+        public static void printCurrentUserRole()
+        {
+            switch (currentUserRole)
+            {
+                case UserRole.ANONYMOUS:
+                    Console.WriteLine("Anonymous");
+                    break;
+                case UserRole.ADMIN:
+                    Console.WriteLine("Admin");
+                    break;
+                case UserRole.INSPECTOR:
+                    Console.WriteLine("Inspector");
+                    break;
+                case UserRole.PROFESSOR:
+                    Console.WriteLine("Professor");
+                    break;
+                case UserRole.STUDENT:
+                    Console.WriteLine("Student");
+                    break;
+            }
         }
     }
 }

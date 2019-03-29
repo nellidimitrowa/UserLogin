@@ -11,11 +11,11 @@ namespace UserLogin
         public string username;
         public string password;
         public string facultyNumber;
-        public int userRole;
+        public UserRole userRole;
 
         public User() { }
 
-        public User(string username, string password, string facultyNumber, int userRole)
+        public User(string username, string password, string facultyNumber, UserRole userRole)
         {
             this.username = username;
             this.password = password;
@@ -25,7 +25,7 @@ namespace UserLogin
 
         public override string ToString()
         {
-            return "Username: " + username + "\nPassword: " + password + "\nFaculty number: " + facultyNumber + "\nUser role: " + userRole;
+            return "Username: " + username + "\nPassword: " + password + "\nFaculty number: " + facultyNumber + "\nUser role: ";
         }
     }
 }
