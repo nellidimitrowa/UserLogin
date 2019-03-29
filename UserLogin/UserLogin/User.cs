@@ -11,7 +11,9 @@ namespace UserLogin
         string username;
         string password;
         string facultyNumber;
-        int userRole;
+        public int userRole;
+
+        public User() { }
 
         public User(string username, string password, string facultyNumber, int userRole)
         {

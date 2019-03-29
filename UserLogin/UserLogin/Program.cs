@@ -10,10 +10,15 @@ namespace UserLogin
     {
         static void Main(string[] args)
         {
-            LoginValidation loginValidation = new LoginValidation();
-            if (loginValidation.validateUserInput())
+            Console.WriteLine("username: ");
+            string username = Console.ReadLine();
+            Console.WriteLine("password: ");
+            string password = Console.ReadLine();
+            LoginValidation loginValidation = new LoginValidation(username, password);
+            User user = new User();
+            if (loginValidation.validateUserInput(ref user))
             {
-                Console.WriteLine(UserData.TestUser);
+                Console.WriteLine(user);
                 Console.WriteLine(LoginValidation.currentUserRole);
             }
             Console.ReadKey();

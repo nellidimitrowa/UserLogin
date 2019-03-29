@@ -24,8 +24,10 @@ namespace UserLogin
             this.password = password;
         }
 
-        public bool validateUserInput()
+        public bool validateUserInput(ref User user)
         {
+            user = UserData.TestUser;
+            currentUserRole = (UserRole)user.userRole;
             return true;
         }
     }
