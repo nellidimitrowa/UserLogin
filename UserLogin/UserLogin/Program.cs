@@ -14,7 +14,7 @@ namespace UserLogin
             string username = Console.ReadLine();
             Console.WriteLine("password: ");
             string password = Console.ReadLine();
-            LoginValidation loginValidation = new LoginValidation(username, password);
+            LoginValidation loginValidation = new LoginValidation(username, password, actionOnError);
             User user = new User();
             if (loginValidation.validateUserInput(ref user))
             {
@@ -26,6 +26,11 @@ namespace UserLogin
                 Console.WriteLine(loginValidation.errorMessage);
             }
             Console.ReadKey();
+        }
+
+        public static void actionOnError(string errorMsg) 
+        {
+           Console.WriteLine("!!! Error! " + errorMsg + " !!!");
         }
     }
 }

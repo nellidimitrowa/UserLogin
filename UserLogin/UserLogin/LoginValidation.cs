@@ -11,6 +11,7 @@ namespace UserLogin
         string username;
         string password;
         public string errorMessage;
+        ActionOnError actionOnError;
         public static UserRole currentUserRole
         {
             get;
@@ -18,10 +19,11 @@ namespace UserLogin
         }
         public LoginValidation() { }
 
-        public LoginValidation(string username, string password)
+        public LoginValidation(string username, string password, ActionOnError actionOnError)
         {
             this.username = username;
             this.password = password;
+            this.actionOnError = actionOnError;
         }
 
         public bool validateUserInput(ref User user)
@@ -57,6 +59,7 @@ namespace UserLogin
                 return false;
             }
 
+            actionOnError(errorMessage);
             currentUserRole = UserRole.ANONYMOUS;
             return true;
         }
@@ -82,5 +85,7 @@ namespace UserLogin
                     break;
             }
         }
+
+        public delegate void ActionOnError(string errorMsg);
     }
 }
