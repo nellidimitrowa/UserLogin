@@ -24,14 +24,26 @@ namespace UserLogin
 
         public static User isUserPassCorrect(string username, string password)
         {
-            for (int i = 0; i < TestUsers.Length; i++)
+            foreach (User user in TestUsers)
             {
-                if (username.Equals(_testUsers[i].username) && password.Equals(_testUsers[i].password))
+                if (username.Equals(user.username) && password.Equals(user.password))
                 {
-                    return _testUsers[i];
+                    return user;
                 }
             }
             return null;
         }
+
+        //public static User isUserPassCorrect(string username, string password)
+        //{
+        //    for (int i = 0; i < TestUsers.Length; i++)
+        //    {
+        //        if (username.Equals(_testUsers[i].username) && password.Equals(_testUsers[i].password))
+        //        {
+        //            return _testUsers[i];
+        //        }
+        //    }
+        //    return null;
+        //}
     }
 }
