@@ -66,6 +66,7 @@ namespace UserLogin
                 return false;
             }
 
+            Logger.LogActivity("Successful login.");
             //currentUserRole = UserRole.ANONYMOUS;
             return true;
         }

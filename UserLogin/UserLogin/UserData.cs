@@ -41,6 +41,7 @@ namespace UserLogin
                 if (username.Equals(user.username))
                 {
                     user.activeDate = newDate;
+                    Logger.LogActivity("Changed validation to " + username);
                 }
             }
         }
@@ -52,6 +53,7 @@ namespace UserLogin
                 if (username.Equals(user.username))
                 {
                     user.userRole = newRole;
+                    Logger.LogActivity("Changed role to " + username);
                 }
             }
         }
