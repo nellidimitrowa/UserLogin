@@ -25,6 +25,9 @@ namespace UserLogin
             {
                 Console.WriteLine(loginValidation.errorMessage);
             }
+
+            DateTime dateAndTime = new DateTime(1997, 11, 16, 13, 30, 00);
+            Console.WriteLine(dateAndTime.DayOfWeek);
             Console.ReadKey();
         }
 

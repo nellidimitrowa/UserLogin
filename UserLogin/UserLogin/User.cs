@@ -12,15 +12,17 @@ namespace UserLogin
         public string password;
         public string facultyNumber;
         public UserRole userRole;
+        public DateTime created;
 
         public User() { }
 
-        public User(string username, string password, string facultyNumber, UserRole userRole)
+        public User(string username, string password, string facultyNumber, UserRole userRole, DateTime created)
         {
             this.username = username;
             this.password = password;
             this.facultyNumber = facultyNumber;
             this.userRole = userRole;
+            this.created = created;
         }
 
         public override string ToString()

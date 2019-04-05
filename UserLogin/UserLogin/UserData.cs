@@ -17,9 +17,9 @@ namespace UserLogin
 
         private static void resetTestUserData()
         {
-            _testUsers[0] = new User("nedyalka", "password", "121212605", UserRole.ADMIN);
-            _testUsers[1] = new User("boyana", "password", "125456456", UserRole.STUDENT);
-            _testUsers[2] = new User("dimitar", "password", "12132155", UserRole.STUDENT);
+            _testUsers[0] = new User("nedyalka", "password", "121212605", UserRole.ADMIN, DateTime.Today);
+            _testUsers[1] = new User("boyana", "password", "125456456", UserRole.STUDENT, DateTime.Today);
+            _testUsers[2] = new User("dimitar", "password", "12132155", UserRole.STUDENT, DateTime.Today);
         }
 
         public static User isUserPassCorrect(string username, string password)
