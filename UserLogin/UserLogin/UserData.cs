@@ -8,8 +8,8 @@ namespace UserLogin
 {
     static class UserData
     {
-        private static User[] _testUsers = new User[3];
-        public static User[] TestUsers
+        private static List<User> _testUsers = new List<User>();
+        public static List<User> TestUsers
         {
             get { resetTestUserData(); return _testUsers; }
             set { }
@@ -17,9 +17,9 @@ namespace UserLogin
 
         private static void resetTestUserData()
         {
-            _testUsers[0] = new User("nedyalka", "password", "121212605", UserRole.ADMIN, DateTime.Today, DateTime.MaxValue);
-            _testUsers[1] = new User("boyana", "password", "125456456", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue);
-            _testUsers[2] = new User("dimitar", "password", "12132155", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue);
+            _testUsers.Add(new User("nedyalka", "password", "121212605", UserRole.ADMIN, DateTime.Today, DateTime.MaxValue));
+            _testUsers.Add(new User("boyana", "password", "125456456", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
+            _testUsers.Add(new User("dimitar", "password", "12132155", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
         }
 
         public static User isUserPassCorrect(string username, string password)
