@@ -12,6 +12,7 @@ namespace UserLogin
         string password;
         public string errorMessage;
         ActionOnError actionOnError;
+        public static string currentUserUsername;
         public static UserRole currentUserRole
         {
             get;
@@ -24,6 +25,7 @@ namespace UserLogin
             this.username = username;
             this.password = password;
             this.actionOnError = actionOnError;
+            currentUserUsername = username;
         }
 
         public bool validateUserInput(ref User user)
