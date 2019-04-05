@@ -29,8 +29,8 @@ namespace UserLogin
 
         public override string ToString()
         {
-            return "Username: " + username + "\nPassword: " + password + "\nFaculty number: " + facultyNumber + "\nCreated: " + 
-                created + "\nActive to: " + activeDate + "\nRole: ";
+            return "Username: " + username + "\nPassword: " + password + "\nFaculty number: " + facultyNumber + "\nRole : " + userRole + "\nCreated: " + 
+                created + "\nActive to: " + activeDate;
         }
     }
 }

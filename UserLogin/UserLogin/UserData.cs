@@ -33,5 +33,27 @@ namespace UserLogin
             }
             return null;
         }
+
+        public static void setUserActiveTo(string username, DateTime newDate) 
+        {
+            foreach (User user in TestUsers)
+            {
+                if (username.Equals(user.username))
+                {
+                    user.activeDate = newDate;
+                }
+            }
+        }
+
+        public static void assignUserRole(string username, UserRole newRole)
+        {
+            foreach (User user in TestUsers)
+            {
+                if (username.Equals(user.username))
+                {
+                    user.userRole = newRole;
+                }
+            }
+        }
     }
 }

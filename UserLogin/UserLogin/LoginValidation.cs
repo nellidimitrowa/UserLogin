@@ -31,24 +31,28 @@ namespace UserLogin
             if (username.Equals(String.Empty) == true)
             {
                 errorMessage = "The username is empty";
+                actionOnError(errorMessage);
                 return false;
             }
 
             if (password.Equals(String.Empty) == true)
             {
                 errorMessage = "The password is empty";
+                actionOnError(errorMessage);
                 return false;
             }
 
             if (username.Length < 5)
             {
                 errorMessage = "The username is less than 5 characters";
+                actionOnError(errorMessage);
                 return false;
             }
 
             if (password.Length < 5)
             {
                 errorMessage = "The password is less than 5 characters";
+                actionOnError(errorMessage);
                 return false;
             }
 
@@ -56,11 +60,11 @@ namespace UserLogin
             if (user == null)
             {
                 errorMessage = "There is no user with these username or password";
+                actionOnError(errorMessage);
                 return false;
             }
 
-            actionOnError(errorMessage);
-            currentUserRole = UserRole.ANONYMOUS;
+            //currentUserRole = UserRole.ANONYMOUS;
             return true;
         }
 
