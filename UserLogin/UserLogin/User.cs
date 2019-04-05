@@ -13,21 +13,24 @@ namespace UserLogin
         public string facultyNumber;
         public UserRole userRole;
         public DateTime created;
+        public DateTime activeDate;
 
         public User() { }
 
-        public User(string username, string password, string facultyNumber, UserRole userRole, DateTime created)
+        public User(string username, string password, string facultyNumber, UserRole userRole, DateTime created, DateTime activeDate)
         {
             this.username = username;
             this.password = password;
             this.facultyNumber = facultyNumber;
             this.userRole = userRole;
             this.created = created;
+            this.activeDate = activeDate;
         }
 
         public override string ToString()
         {
-            return "Username: " + username + "\nPassword: " + password + "\nFaculty number: " + facultyNumber + "\nUser role: ";
+            return "Username: " + username + "\nPassword: " + password + "\nFaculty number: " + facultyNumber + "\nCreated: " + 
+                created + "\nActive to: " + activeDate + "\nRole: ";
         }
     }
 }

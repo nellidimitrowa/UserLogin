@@ -17,9 +17,9 @@ namespace UserLogin
 
         private static void resetTestUserData()
         {
-            _testUsers[0] = new User("nedyalka", "password", "121212605", UserRole.ADMIN, DateTime.Today);
-            _testUsers[1] = new User("boyana", "password", "125456456", UserRole.STUDENT, DateTime.Today);
-            _testUsers[2] = new User("dimitar", "password", "12132155", UserRole.STUDENT, DateTime.Today);
+            _testUsers[0] = new User("nedyalka", "password", "121212605", UserRole.ADMIN, DateTime.Today, DateTime.MaxValue);
+            _testUsers[1] = new User("boyana", "password", "125456456", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue);
+            _testUsers[2] = new User("dimitar", "password", "12132155", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue);
         }
 
         public static User isUserPassCorrect(string username, string password)
@@ -33,17 +33,5 @@ namespace UserLogin
             }
             return null;
         }
-
-        //public static User isUserPassCorrect(string username, string password)
-        //{
-        //    for (int i = 0; i < TestUsers.Length; i++)
-        //    {
-        //        if (username.Equals(_testUsers[i].username) && password.Equals(_testUsers[i].password))
-        //        {
-        //            return _testUsers[i];
-        //        }
-        //    }
-        //    return null;
-        //}
     }
 }
