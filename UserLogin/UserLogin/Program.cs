@@ -10,9 +10,9 @@ namespace UserLogin
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter username: ");
+            Console.Write("Enter username: ");
             string username = Console.ReadLine();
-            Console.WriteLine("Enter password: ");
+            Console.Write("Enter password: ");
             string password = Console.ReadLine();
             LoginValidation loginValidation = new LoginValidation(username, password, actionOnError);
             User user = new User();
@@ -46,7 +46,8 @@ namespace UserLogin
             Console.WriteLine("2. Change user validation");
             Console.WriteLine("3. View all users usernames");
             Console.WriteLine("4. View activity log");
-            Console.WriteLine("Enter choice: ");
+            Console.WriteLine("5. View current session activity");
+            Console.Write("Enter choice: ");
         }
 
         public static void userChoice(int choice) 
@@ -59,18 +60,18 @@ namespace UserLogin
                     Console.ReadKey();
                     break;
                 case 1:
-                    Console.WriteLine("Enter username: ");
+                    Console.Write("Enter username: ");
                     string userToEditHisRole = Console.ReadLine();
                     Console.WriteLine("1 - Anonymous    2 - Admin   3 - Inspector   4 - Professor 5 - Student");
-                    Console.WriteLine("Enter new role:");
+                    Console.Write("Enter new role: ");
                     int newRole = Convert.ToInt32(Console.ReadLine());
                     newRole = newRole - 1;
                     UserData.assignUserRole(allUsers[userToEditHisRole], (UserRole)newRole);
                     break;
                 case 2:
-                    Console.WriteLine("Enter username: ");
+                    Console.Write("Enter username: ");
                     string userToEditHisActivity = Console.ReadLine();
-                    Console.WriteLine("Enter new date (yyyy.mm.dd): ");
+                    Console.Write("Enter new date (yyyy.mm.dd): ");
                     string date = Console.ReadLine();
                     DateTime newDate = Convert.ToDateTime(date);
                     UserData.setUserActiveTo(allUsers[userToEditHisActivity], newDate);
@@ -83,6 +84,11 @@ namespace UserLogin
                     break;
                 case 4:
                     Logger.viewLogActivity();
+                    break;
+                case 5:
+                    Console.Write("Enter filter: ");
+                    string filter = Console.ReadLine();
+                    Logger.getCurrentSessionActivities(filter);
                     break;
             }
         }
