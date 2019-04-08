@@ -1,2 +1,11 @@
 08-Apr-19 3:03:35 PM; nedyalka; ANONYMOUS; Successful login.
 08-Apr-19 3:03:58 PM; nedyalka; ANONYMOUS; Changed validation to dimitar
+08-Apr-19 3:18:57 PM; nedyalka; ANONYMOUS; Successful login.
+08-Apr-19 7:19:55 PM; nedyalka; ANONYMOUS; Successful login.
+08-Apr-19 7:20:27 PM; nedyalka; ANONYMOUS; Successful login.
+08-Apr-19 7:21:30 PM; nedyalka; ANONYMOUS; Successful login.
+08-Apr-19 7:22:37 PM; nedyalka; ANONYMOUS; Successful login.
+08-Apr-19 7:23:11 PM; nedyalka; ANONYMOUS; Successful login.
+08-Apr-19 7:23:57 PM; nedyalka; ANONYMOUS; Successful login.
+08-Apr-19 7:24:04 PM; nedyalka; ANONYMOUS; Changed role to boyana
+08-Apr-19 7:24:09 PM; nedyalka; ANONYMOUS; Changed role to nedyalka

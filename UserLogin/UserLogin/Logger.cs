@@ -36,5 +36,20 @@ namespace UserLogin
                 Console.WriteLine(text);
             }
         }
+
+        public static void getCurrentSessionActivities(string filter)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            List<string> filteredActivities = (from activity in currentSessionActivities
+                                               where activity.Contains(filter)
+                                               select activity).ToList();
+
+            foreach (var action in filteredActivities) 
+            {    
+                stringBuilder.Append(action);
+            }
+
+            Console.WriteLine(stringBuilder.ToString());
+        }
     }
 }
