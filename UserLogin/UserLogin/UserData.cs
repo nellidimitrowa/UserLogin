@@ -34,28 +34,16 @@ namespace UserLogin
             return null;
         }
 
-        public static void setUserActiveTo(string username, DateTime newDate) 
+        public static void setUserActiveTo(int userIndex, DateTime newDate) 
         {
-            foreach (User user in TestUsers)
-            {
-                if (username.Equals(user.username))
-                {
-                    user.activeDate = newDate;
-                    Logger.LogActivity("Changed validation to " + username);
-                }
-            }
+            _testUsers[userIndex].activeDate = newDate;
+            Logger.LogActivity("Changed validation to " + _testUsers[userIndex].username);
         }
 
-        public static void assignUserRole(string username, UserRole newRole)
+        public static void assignUserRole(int  userIndex, UserRole newRole)
         {
-            foreach (User user in TestUsers)
-            {
-                if (username.Equals(user.username))
-                {
-                    user.userRole = newRole;
-                    Logger.LogActivity("Changed role to " + username);
-                }
-            }
+            _testUsers[userIndex].userRole = newRole;
+            Logger.LogActivity("Changed role to " + _testUsers[userIndex].username);
         }
 
         public static Dictionary<string,int> printAllUsersUsernames()

@@ -64,7 +64,7 @@ namespace UserLogin
                     Console.WriteLine("Enter new role:");
                     int newRole = Convert.ToInt32(Console.ReadLine());
                     newRole = newRole - 1;
-                    UserData.assignUserRole(userToEditHisRole, (UserRole)newRole);
+                    UserData.assignUserRole(allUsers[userToEditHisRole], (UserRole)newRole);
                     break;
                 case 2:
                     Console.WriteLine("Enter username: ");
@@ -72,7 +72,7 @@ namespace UserLogin
                     Console.WriteLine("Enter new date (yyyy.mm.dd): ");
                     string date = Console.ReadLine();
                     DateTime newDate = Convert.ToDateTime(date);
-                    UserData.setUserActiveTo(userToEditHisActivity, newDate);
+                    UserData.setUserActiveTo(allUsers[userToEditHisActivity], newDate);
                     break;
                 case 3:
                     foreach (KeyValuePair<string, int> user in allUsers)
