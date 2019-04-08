@@ -4,3 +4,4 @@ D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\UserLogin\bin\Debug
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\UserLogin\obj\Debug\UserLogin.csprojResolveAssemblyReference.cache
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\UserLogin\obj\Debug\UserLogin.exe
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\UserLogin\obj\Debug\UserLogin.pdb
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\UserLogin\bin\Debug\log.txt

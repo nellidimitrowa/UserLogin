@@ -45,6 +45,7 @@ namespace UserLogin
             Console.WriteLine("1. Change user role");
             Console.WriteLine("2. Change user validation");
             Console.WriteLine("3. View all users usernames");
+            Console.WriteLine("4. View activity log");
             Console.WriteLine("Enter choice: ");
         }
 
@@ -79,6 +80,9 @@ namespace UserLogin
                     {
                         Console.WriteLine(user.Key);
                     }
+                    break;
+                case 4:
+                    Logger.viewLogActivity();
                     break;
             }
         }

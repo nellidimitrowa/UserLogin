@@ -10,12 +10,13 @@ namespace UserLogin
     static class Logger
     {
         private static List<string> currentSessionActivities = new List<string>();
-        static string LOG_FILE = "log.txt";
+        public static string LOG_FILE = "log.txt";
 
         public static void LogActivity(string activity)
         {
-            string activityLine = DateTime.Now + ";" + LoginValidation.currentUserUsername + ";" +
-                LoginValidation.currentUserRole + ";" + activity; currentSessionActivities.Add(activityLine);
+            string activityLine = DateTime.Now + "; " + LoginValidation.currentUserUsername + "; " +
+                LoginValidation.currentUserRole + "; " + activity + "\n"; 
+            currentSessionActivities.Add(activityLine);
             writeToLogFile(activityLine);
         }
 
@@ -27,5 +28,13 @@ namespace UserLogin
             }
         }
 
+        public static void viewLogActivity()
+        {
+            if (File.Exists(LOG_FILE) == true)
+            {
+                string text = File.ReadAllText(LOG_FILE);
+                Console.WriteLine(text);
+            }
+        }
     }
 }
