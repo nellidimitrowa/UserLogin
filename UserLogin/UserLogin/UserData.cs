@@ -57,5 +57,15 @@ namespace UserLogin
                 }
             }
         }
+
+        public static Dictionary<string,int> printAllUsersUsernames()
+        {
+            Dictionary<string, int> allUsers = new Dictionary<string, int>();
+            for (int i = 0; i < _testUsers.Count; i++) 
+            {
+                allUsers.Add(_testUsers[i].username, i);
+            }
+            return allUsers;
+        }
     }
 }

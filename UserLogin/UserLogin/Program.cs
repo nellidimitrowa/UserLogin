@@ -44,10 +44,13 @@ namespace UserLogin
             Console.WriteLine("0. Exit");
             Console.WriteLine("1. Change user role");
             Console.WriteLine("2. Change user validation");
+            Console.WriteLine("3. View all users usernames");
+            Console.WriteLine("Enter choice: ");
         }
 
         public static void userChoice(int choice) 
         {
+            Dictionary<string, int> allUsers = UserData.printAllUsersUsernames();
             switch (choice)
             {
                 case 0:
@@ -70,6 +73,12 @@ namespace UserLogin
                     string date = Console.ReadLine();
                     DateTime newDate = Convert.ToDateTime(date);
                     UserData.setUserActiveTo(userToEditHisActivity, newDate);
+                    break;
+                case 3:
+                    foreach (KeyValuePair<string, int> user in allUsers)
+                    {
+                        Console.WriteLine(user.Key);
+                    }
                     break;
             }
         }
