@@ -24,14 +24,12 @@ namespace UserLogin
 
         public static User isUserPassCorrect(string username, string password)
         {
-            foreach (User user in TestUsers)
-            {
-                if (username.Equals(user.username) && password.Equals(user.password))
-                {
-                    return user;
-                }
-            }
-            return null;
+
+            User findedUser = (from user in TestUsers
+                               where username.Equals(user.username) && password.Equals(user.password)
+                               select user).First();
+
+            return findedUser;
         }
 
         public static void setUserActiveTo(int userIndex, DateTime newDate) 
