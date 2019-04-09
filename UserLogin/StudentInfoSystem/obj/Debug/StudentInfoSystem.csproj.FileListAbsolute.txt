@@ -1,0 +1,1 @@
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\bin\Debug\StudentInfoSystem.exe.config

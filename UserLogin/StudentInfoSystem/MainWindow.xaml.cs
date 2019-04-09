@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace UserLogin
+namespace StudentInfoSystem
 {
     /// <summary>
-    /// Interaction logic for StudentInfoSystem.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class StudentInfoSystem : UserControl
+    public partial class MainWindow : Window
     {
-        public StudentInfoSystem()
+        public MainWindow()
         {
             InitializeComponent();
         }
