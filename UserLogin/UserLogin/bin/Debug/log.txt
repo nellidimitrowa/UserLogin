@@ -9,3 +9,7 @@
 08-Apr-19 7:23:57 PM; nedyalka; ANONYMOUS; Successful login.
 08-Apr-19 7:24:04 PM; nedyalka; ANONYMOUS; Changed role to boyana
 08-Apr-19 7:24:09 PM; nedyalka; ANONYMOUS; Changed role to nedyalka
+<<<<<<< HEAD
+=======
+08-Apr-19 7:31:10 PM; nedyalka; ANONYMOUS; Successful login.
+>>>>>>> 8ef3d750c85f182e02043488ab896828dcf14949
