@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentRepository
 {
-    class StudentData
+    public class StudentData
     {
         private static List<Student> _testStudents = new List<Student>();
         List<Student> TestStudents

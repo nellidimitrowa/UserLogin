@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentRepository
 {
-    class Student
+    public class Student
     {
         string firstName;
         string secondName;
@@ -43,7 +43,7 @@ namespace StudentRepository
 
         public String getFacNum()
         {
-            return this.facNumber;
+            return this.facultyNumber;
         }
 
         public override string ToString()
