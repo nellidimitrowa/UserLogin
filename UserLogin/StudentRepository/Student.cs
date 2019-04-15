@@ -19,10 +19,12 @@ namespace StudentRepository
         int course;
         int stream;
         int group;
+        public DateTime lastAuthenticationDate;
+        public DateTime lastSemesterFeeDate;
 
         public Student () { }
         public Student (string firstName, string secondName, string lastName, string faculty, string speciality, string educationalDegree,
-            string status, string facultyNumber, int course, int stream, int group)
+            string status, string facultyNumber, int course, int stream, int group, DateTime lastAuthenticationDate, DateTime lastSemesterFeeDate)
         {
             this.firstName = firstName;
             this.secondName = secondName;
@@ -35,13 +37,16 @@ namespace StudentRepository
             this.course = course;
             this.stream = stream;
             this.group = group;
+            this.lastAuthenticationDate = lastAuthenticationDate;
+            this.lastSemesterFeeDate = lastSemesterFeeDate;
         }
 
         public override string ToString()
         {
             return "Names: " + firstName + " " + secondName + " " + lastName + "\nFaculty: " + faculty + "\nSpeciality: " + speciality +
                 "\nEducational degree: " + educationalDegree + "\nStatus: " + status + "\nFaculty number: " + facultyNumber +
-                "\nCourse: " + course + "\nStream: " + stream + "\nGroup: " + group;
+                "\nCourse: " + course + "\nStream: " + stream + "\nGroup: " + group + "Date of the last authentication date: " +
+                lastAuthenticationDate + "\nDate of the last semester fee: " + lastSemesterFeeDate;
         }
     }
 }
