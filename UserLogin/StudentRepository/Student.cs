@@ -20,8 +20,8 @@ namespace StudentRepository
         int stream;
         int group;
 
-        Student() { }
-        Student(string firstName, string secondName, string lastName, string faculty, string speciality, string educationalDegree,
+        public Student () { }
+        public Student (string firstName, string secondName, string lastName, string faculty, string speciality, string educationalDegree,
             string status, string facultyNumber, int course, int stream, int group)
         {
             this.firstName = firstName;
