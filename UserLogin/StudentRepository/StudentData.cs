@@ -8,11 +8,17 @@ namespace StudentRepository
 {
     class StudentData
     {
-        private static Student _testStudent = new Student();
-        Student TestStudent
+        private static List<Student> _testStudents = new List<Student>();
+        List<Student> TestStudents
         {
-            get { return _testStudent; }
+            get { addStudents(); return _testStudents; }
             private set;
+        }
+
+        private static void addStudents()
+        {
+            _testStudents.Add(new Student("Nedyalka", "Dimitrova", "Dimitrova", "FKST", "KSI", "bachelor", "certified", "121216065", 3, 1, 47, new DateTime(2019, 02, 01), new DateTime(2019, 02, 15)));
+            _testStudents.Add(new Student("Yordan", "Atanasov", "Radkov", "FMI", "Informatics", "bachelor", "semester graduated", "121314001", 4, 0, 1, new DateTime(2018, 05, 01), new DateTime(2018,02, 15)));
         }
     }
 }
