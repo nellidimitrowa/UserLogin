@@ -1,1 +1,5 @@
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentRepository\bin\Debug\StudentRepository.exe.config
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentRepository\bin\Debug\StudentRepository.exe
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentRepository\bin\Debug\StudentRepository.pdb
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentRepository\obj\Debug\StudentRepository.exe
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentRepository\obj\Debug\StudentRepository.pdb

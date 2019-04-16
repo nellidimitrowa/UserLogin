@@ -9,10 +9,10 @@ namespace StudentRepository
     public class StudentData
     {
         private static List<Student> _testStudents = new List<Student>();
-        List<Student> TestStudents
+        public static List<Student> TestStudents
         {
             get { AddStudents(); return _testStudents; }
-            private set;
+            private set { }
         }
 
         private static void AddStudents()
@@ -23,7 +23,7 @@ namespace StudentRepository
 
         public static Student FindStudentByFacultyNumber(string fakNumber)
         {
-            Student findedStudent = (from student in _testStudents
+            Student findedStudent = (from student in TestStudents
                                    where fakNumber.Equals(student.GetFacNum())
                                    select student).First();
             return findedStudent;

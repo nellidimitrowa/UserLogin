@@ -50,7 +50,7 @@ namespace StudentRepository
         {
             return "Names: " + firstName + " " + secondName + " " + lastName + "\nFaculty: " + faculty + "\nSpeciality: " + speciality +
                 "\nEducational degree: " + educationalDegree + "\nStatus: " + status + "\nFaculty number: " + facultyNumber +
-                "\nCourse: " + course + "\nStream: " + stream + "\nGroup: " + group + "Date of the last authentication date: " +
+                "\nCourse: " + course + "\nStream: " + stream + "\nGroup: " + group + "\nDate of the last authentication date: " +
                 lastAuthenticationDate + "\nDate of the last semester fee: " + lastSemesterFeeDate;
         }
     }
