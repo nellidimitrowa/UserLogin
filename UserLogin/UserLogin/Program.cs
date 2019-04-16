@@ -14,16 +14,16 @@ namespace UserLogin
             string username = Console.ReadLine();
             Console.Write("Enter password: ");
             string password = Console.ReadLine();
-            LoginValidation loginValidation = new LoginValidation(username, password, actionOnError);
+            LoginValidation loginValidation = new LoginValidation(username, password, ActionOnError);
             User user = new User();
-            if (loginValidation.validateUserInput(ref user))
+            if (loginValidation.ValidateUserInput(ref user))
             {
                 int choice;
                 do
                 {
-                    menu();
+                    Menu();
                     choice = Convert.ToInt32(Console.ReadLine());
-                    userChoice(choice);
+                    UserChoice(choice);
                 } while (choice != 0);
                 Console.WriteLine(user);
             }
@@ -34,13 +34,14 @@ namespace UserLogin
             Console.ReadKey();
         }
 
-        public static void actionOnError(string errorMsg) 
+        public static void ActionOnError(string errorMsg) 
         {
            Console.WriteLine("Error! " + errorMsg);
         }
 
-        public static void menu()
+        public static void Menu()
         {
+            Console.WriteLine();
             Console.WriteLine("0. Exit");
             Console.WriteLine("1. Change user role");
             Console.WriteLine("2. Change user validation");
@@ -50,9 +51,9 @@ namespace UserLogin
             Console.Write("Enter choice: ");
         }
 
-        public static void userChoice(int choice) 
+        public static void UserChoice(int choice) 
         {
-            Dictionary<string, int> allUsers = UserData.printAllUsersUsernames();
+            Dictionary<string, int> allUsers = UserData.PrintAllUsersUsernames();
             switch (choice)
             {
                 case 0:
@@ -66,7 +67,7 @@ namespace UserLogin
                     Console.Write("Enter new role: ");
                     int newRole = Convert.ToInt32(Console.ReadLine());
                     newRole = newRole - 1;
-                    UserData.assignUserRole(allUsers[userToEditHisRole], (UserRole)newRole);
+                    UserData.AssignUserRole(allUsers[userToEditHisRole], (UserRole)newRole);
                     break;
                 case 2:
                     Console.Write("Enter username: ");
@@ -74,7 +75,7 @@ namespace UserLogin
                     Console.Write("Enter new date (yyyy.mm.dd): ");
                     string date = Console.ReadLine();
                     DateTime newDate = Convert.ToDateTime(date);
-                    UserData.setUserActiveTo(allUsers[userToEditHisActivity], newDate);
+                    UserData.SetUserActiveTo(allUsers[userToEditHisActivity], newDate);
                     break;
                 case 3:
                     foreach (KeyValuePair<string, int> user in allUsers)
@@ -83,12 +84,12 @@ namespace UserLogin
                     }
                     break;
                 case 4:
-                    Logger.viewLogActivity();
+                    Logger.ViewLogActivity();
                     break;
                 case 5:
                     Console.Write("Enter filter: ");
                     string filter = Console.ReadLine();
-                    Logger.getCurrentSessionActivities(filter);
+                    Logger.GetCurrentSessionActivities(filter);
                     break;
             }
         }

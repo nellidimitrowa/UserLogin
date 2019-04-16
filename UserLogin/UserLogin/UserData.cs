@@ -11,18 +11,18 @@ namespace UserLogin
         private static List<User> _testUsers = new List<User>();
         public static List<User> TestUsers
         {
-            get { resetTestUserData(); return _testUsers; }
+            get { ResetTestUserData(); return _testUsers; }
             set { }
         }
 
-        private static void resetTestUserData()
+        private static void ResetTestUserData()
         {
             _testUsers.Add(new User("nedyalka", "password", "121212605", UserRole.ADMIN, DateTime.Today, DateTime.MaxValue));
             _testUsers.Add(new User("boyana", "password", "125456456", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
             _testUsers.Add(new User("dimitar", "password", "12132155", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
         }
 
-        public static User isUserPassCorrect(string username, string password)
+        public static User IsUserPassCorrect(string username, string password)
         {
 
             User findedUser = (from user in TestUsers
@@ -32,19 +32,19 @@ namespace UserLogin
             return findedUser;
         }
 
-        public static void setUserActiveTo(int userIndex, DateTime newDate) 
+        public static void SetUserActiveTo(int userIndex, DateTime newDate) 
         {
             _testUsers[userIndex].activeDate = newDate;
             Logger.LogActivity("Changed validation to " + _testUsers[userIndex].username);
         }
 
-        public static void assignUserRole(int  userIndex, UserRole newRole)
+        public static void AssignUserRole(int  userIndex, UserRole newRole)
         {
             _testUsers[userIndex].userRole = newRole;
             Logger.LogActivity("Changed role to " + _testUsers[userIndex].username);
         }
 
-        public static Dictionary<string,int> printAllUsersUsernames()
+        public static Dictionary<string,int> PrintAllUsersUsernames()
         {
             Dictionary<string, int> allUsers = new Dictionary<string, int>();
             for (int i = 0; i < _testUsers.Count; i++) 

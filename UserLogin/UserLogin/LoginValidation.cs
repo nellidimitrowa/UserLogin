@@ -28,7 +28,7 @@ namespace UserLogin
             currentUserUsername = username;
         }
 
-        public bool validateUserInput(ref User user)
+        public bool ValidateUserInput(ref User user)
         {
             if (username.Equals(String.Empty) == true)
             {
@@ -58,7 +58,7 @@ namespace UserLogin
                 return false;
             }
 
-            user = UserData.isUserPassCorrect(username, password);
+            user = UserData.IsUserPassCorrect(username, password);
             if (user == null)
             {
                 errorMessage = "There is no user with these username or password";
@@ -71,7 +71,7 @@ namespace UserLogin
             return true;
         }
 
-        public static void printCurrentUserRole()
+        public static void PrintCurrentUserRole()
         {
             switch (currentUserRole)
             {

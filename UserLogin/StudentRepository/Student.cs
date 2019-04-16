@@ -41,7 +41,7 @@ namespace StudentRepository
             this.lastSemesterFeeDate = lastSemesterFeeDate;
         }
 
-        public String getFacNum()
+        public String GetFacNum()
         {
             return this.facultyNumber;
         }

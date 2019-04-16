@@ -17,10 +17,10 @@ namespace UserLogin
             string activityLine = DateTime.Now + "; " + LoginValidation.currentUserUsername + "; " +
                 LoginValidation.currentUserRole + "; " + activity + "\n"; 
             currentSessionActivities.Add(activityLine);
-            writeToLogFile(activityLine);
+            WriteToLogFile(activityLine);
         }
 
-        public static void writeToLogFile(string activityLine)
+        public static void WriteToLogFile(string activityLine)
         {
             if (File.Exists(LOG_FILE) == true)
             {
@@ -28,7 +28,7 @@ namespace UserLogin
             }
         }
 
-        public static void viewLogActivity()
+        public static void ViewLogActivity()
         {
             if (File.Exists(LOG_FILE) == true)
             {
@@ -37,7 +37,7 @@ namespace UserLogin
             }
         }
 
-        public static void getCurrentSessionActivities(string filter)
+        public static void GetCurrentSessionActivities(string filter)
         {
             StringBuilder stringBuilder = new StringBuilder();
             List<string> filteredActivities = (from activity in currentSessionActivities
