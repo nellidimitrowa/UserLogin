@@ -27,7 +27,14 @@ namespace WPFhello
 
         private void btnHello_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello, " + txtName.Text + "!!!"); 
+            if (txtName.Text.Length < 2)
+            {
+                MessageBox.Show("The name is too short.");
+            }
+            else
+            {
+                MessageBox.Show("Hello, " + txtName.Text + "!!!");
+            }
         }
     }
 }
