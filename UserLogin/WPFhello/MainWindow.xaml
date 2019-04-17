@@ -8,5 +8,8 @@
             <Label x:Name="labelName" Content="Name:" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top"/>
         </GroupBox>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="35" Margin="106,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize="20"/>
+        <Label x:Name="labelN" Content="Enter n:" HorizontalAlignment="Left" Margin="23,196,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="txtN" HorizontalAlignment="Left" Height="35" Margin="106,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="20"/>
+        <Button x:Name="btnResult" Content="n!" HorizontalAlignment="Left" Margin="432,196,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.014,1.796" FontSize="20" Click="btnResult_Click" Height="37"/>
     </Grid>
 </Window>

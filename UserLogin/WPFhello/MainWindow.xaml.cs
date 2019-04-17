@@ -36,5 +36,34 @@ namespace WPFhello
                 MessageBox.Show("Hello, " + txtName.Text + "!!!");
             }
         }
+
+        private void btnResult_Click(object sender, RoutedEventArgs e)
+        {
+            int value;
+            Int32.TryParse(txtN.Text, out value);
+            if (value == 0) 
+            {
+                MessageBox.Show("Invalid data. \nPlease, try again.");
+            }
+
+            if (value == 1) 
+            {
+                MessageBox.Show("n! = 1");
+            }
+
+            if(value == 2) {
+                MessageBox.Show("n! = 2");
+            }
+
+            if(value > 2) 
+            {
+                int result = 1;
+                for (int i = value; i > 0; i--)
+                {
+                    result = result * i;
+                }
+                MessageBox.Show("n! = " + result);
+            }
+        }
     }
 }
