@@ -61,5 +61,20 @@ namespace WPFhello
                 MessageBox.Show("n! = " + result);
             }
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Do you really want to exit?", "Close", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("Bye, bye!");
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("Hello again!");
+                    e.Cancel = true;
+                    break;
+            }
+        }
     }
 }
