@@ -46,13 +46,9 @@ namespace WPFhello
                 MessageBox.Show("Invalid data. \nPlease, try again.");
             }
 
-            if (value == 1) 
+            if (value == 1 || value == 2) 
             {
-                MessageBox.Show("n! = 1");
-            }
-
-            if(value == 2) {
-                MessageBox.Show("n! = 2");
+                MessageBox.Show("n! = " + value);
             }
 
             if(value > 2) 
