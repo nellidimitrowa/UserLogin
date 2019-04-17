@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentInfoSystem", "Studen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRepository", "StudentRepository\StudentRepository.csproj", "{03A0E20A-D598-46FD-92D2-DF646FC62C12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFhello", "WPFhello\WPFhello.csproj", "{79012E0C-FA7B-4A60-BDC3-DAE8CCCD652D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{03A0E20A-D598-46FD-92D2-DF646FC62C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A0E20A-D598-46FD-92D2-DF646FC62C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A0E20A-D598-46FD-92D2-DF646FC62C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79012E0C-FA7B-4A60-BDC3-DAE8CCCD652D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79012E0C-FA7B-4A60-BDC3-DAE8CCCD652D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79012E0C-FA7B-4A60-BDC3-DAE8CCCD652D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79012E0C-FA7B-4A60-BDC3-DAE8CCCD652D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
