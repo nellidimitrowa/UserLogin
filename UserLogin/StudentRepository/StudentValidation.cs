@@ -11,21 +11,13 @@ namespace StudentRepository
     {
         public Student GetStudentDataByUser (User user) 
         {
-            if(user.facultyNumber == null)
+            Student student = StudentData.FindStudentByFacultyNumber(user.facultyNumber);
+            if(user.facultyNumber == null || student == null)
             {
                 Console.WriteLine("There is no student with this user's faculty number");
                 return null;
             }
-            else
-            {
-                Student student = StudentData.FindStudentByFacultyNumber(user.facultyNumber);
-                if(student == null)
-                {
-                    Console.WriteLine("There is no student with this user's faculty number");
-                    return null;
-                }
-               return student;
-            }
+            return student;
         }
     }
 }
