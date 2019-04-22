@@ -54,5 +54,20 @@ namespace StudentInfoSystem
             txtStream.IsEnabled = false;
             txtGroup.IsEnabled = false;
         }
+
+        private void EnableTextBoxes()
+        {
+            txtFirstName.IsEnabled = true;
+            txtSecondName.IsEnabled = true;
+            txtLastName.IsEnabled = true;
+            txtFaculty.IsEnabled = true;
+            txtSpeciality.IsEnabled = true;
+            txtEducationalDegree.IsEnabled = true;
+            txtStatus.IsEnabled = true;
+            txtFacultyNumber.IsEnabled = true;
+            txtCourse.IsEnabled = true;
+            txtStream.IsEnabled = true;
+            txtGroup.IsEnabled = true;
+        }
     }
 }
