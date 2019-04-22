@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using StudentRepository;
 
 namespace StudentInfoSystem
 {
@@ -27,18 +28,20 @@ namespace StudentInfoSystem
 
         private void ClearTextBoxesContent()
         {
-            txtFirstName.Text = String.Empty;
-            txtSecondName.Text = String.Empty;
-            txtLastName.Text = String.Empty;
-            txtFaculty.Text = String.Empty;
-            txtSpeciality.Text = String.Empty;
-            txtEducationalDegree.Text = String.Empty;
-            txtStatus.Text = String.Empty;
-            txtFacultyNumber.Text = String.Empty;
-            txtCourse.Text = String.Empty;
-            txtStream.Text = String.Empty;
-            txtGroup.Text = String.Empty;
+
+            foreach (var item in gbPersonalInformation.Children)
+            {
+                if (item is TextBox)
+                {
+                    ((TextBox)item).Text = String.Empty;
+                }
+            }
         }
+
+        //private void ShowStudentInfo()
+        //{
+        //    txtFirstName.Text = 
+        //}
 
         private void DisableTextBoxes()
         {

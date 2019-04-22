@@ -8,17 +8,17 @@ namespace StudentRepository
 {
     public class Student
     {
-        string firstName;
-        string secondName;
-        string lastName;
-        string faculty;
-        string speciality;
-        string educationalDegree;
-        string status;
-        string facultyNumber;
-        int course;
-        int stream;
-        int group;
+        private string firstName;
+        private string secondName;
+        private string lastName;
+        private string faculty;
+        private string speciality;
+        private string educationalDegree;
+        private string status;
+        private string facultyNumber;
+        private int course;
+        private int stream;
+        private int group;
         public DateTime lastAuthenticationDate;
         public DateTime lastSemesterFeeDate;
 
@@ -41,9 +41,59 @@ namespace StudentRepository
             this.lastSemesterFeeDate = lastSemesterFeeDate;
         }
 
+        public String GetFirstName()
+        {
+            return this.firstName;
+        }
+
+        public String GetSecondName()
+        {
+            return this.secondName;
+        }
+
+        public String GetLastName()
+        {
+            return this.lastName;
+        }
+
+        public String GetFaculty()
+        {
+            return this.faculty;
+        }
+
+        public String GetSpeciality()
+        {
+            return this.speciality;
+        }
+
+        public String GetEducationalDegree()
+        {
+            return this.educationalDegree;
+        }
+
+        public String GetStatus()
+        {
+            return this.status;
+        }
+
         public String GetFacNum()
         {
             return this.facultyNumber;
+        }
+
+        public int GetCourse()
+        {
+            return this.course;
+        }
+
+        public int GetStream()
+        {
+            return this.stream;
+        }
+
+        public int GetGroup()
+        {
+            return this.group;
         }
 
         public override string ToString()

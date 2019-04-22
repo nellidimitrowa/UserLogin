@@ -40,6 +40,14 @@ namespace StudentInfoSystem {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
+        #line 7 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Grid gbPersonalInformation;
+        
+        #line default
+        #line hidden
+        
+        
         #line 12 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txtFirstName;
@@ -158,36 +166,39 @@ namespace StudentInfoSystem {
             switch (connectionId)
             {
             case 1:
-            this.txtFirstName = ((System.Windows.Controls.TextBox)(target));
+            this.gbPersonalInformation = ((System.Windows.Controls.Grid)(target));
             return;
             case 2:
-            this.txtSecondName = ((System.Windows.Controls.TextBox)(target));
+            this.txtFirstName = ((System.Windows.Controls.TextBox)(target));
             return;
             case 3:
-            this.txtLastName = ((System.Windows.Controls.TextBox)(target));
+            this.txtSecondName = ((System.Windows.Controls.TextBox)(target));
             return;
             case 4:
-            this.txtSpeciality = ((System.Windows.Controls.TextBox)(target));
+            this.txtLastName = ((System.Windows.Controls.TextBox)(target));
             return;
             case 5:
-            this.txtEducationalDegree = ((System.Windows.Controls.TextBox)(target));
+            this.txtSpeciality = ((System.Windows.Controls.TextBox)(target));
             return;
             case 6:
-            this.txtFacultyNumber = ((System.Windows.Controls.TextBox)(target));
+            this.txtEducationalDegree = ((System.Windows.Controls.TextBox)(target));
             return;
             case 7:
-            this.txtStatus = ((System.Windows.Controls.TextBox)(target));
+            this.txtFacultyNumber = ((System.Windows.Controls.TextBox)(target));
             return;
             case 8:
-            this.txtCourse = ((System.Windows.Controls.TextBox)(target));
+            this.txtStatus = ((System.Windows.Controls.TextBox)(target));
             return;
             case 9:
-            this.txtStream = ((System.Windows.Controls.TextBox)(target));
+            this.txtCourse = ((System.Windows.Controls.TextBox)(target));
             return;
             case 10:
-            this.txtGroup = ((System.Windows.Controls.TextBox)(target));
+            this.txtStream = ((System.Windows.Controls.TextBox)(target));
             return;
             case 11:
+            this.txtGroup = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 12:
             this.txtFaculty = ((System.Windows.Controls.TextBox)(target));
             return;
             }
