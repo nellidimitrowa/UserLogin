@@ -24,5 +24,20 @@ namespace StudentInfoSystem
         {
             InitializeComponent();
         }
+
+        private void ClearTextBoxContent()
+        {
+            txtFirstName.Text = String.Empty;
+            txtSecondName.Text = String.Empty;
+            txtLastName.Text = String.Empty;
+            txtFaculty.Text = String.Empty;
+            txtSpeciality.Text = String.Empty;
+            txtEducationalDegree.Text = String.Empty;
+            txtStatus.Text = String.Empty;
+            txtFacultyNumber.Text = String.Empty;
+            txtCouse.Text = String.Empty;
+            txtStream.Text = String.Empty;
+            txtGroup.Text = String.Empty;
+        }
     }
 }
