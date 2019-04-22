@@ -1,7 +1,7 @@
 ﻿<Window x:Class="StudentInfoSystem.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Student Info System" Height="350" Width="525">
     <Grid>
         <GroupBox Header="Personal information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="106" Width="497"/>
         <Grid HorizontalAlignment="Left" Height="106" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
