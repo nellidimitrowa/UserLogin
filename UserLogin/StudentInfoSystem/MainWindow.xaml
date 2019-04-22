@@ -4,7 +4,7 @@
         Title="Student Info System" Height="350" Width="525">
     <Grid>
         <GroupBox Header="Personal information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="106" Width="497"/>
-        <Grid x:Name="gbPersonalInformation" HorizontalAlignment="Left" Height="106" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+        <Grid x:Name="gPersonalInformation" HorizontalAlignment="Left" Height="106" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
             <Label Content="First name:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
         </Grid>
         <Label Content="Second name:" HorizontalAlignment="Left" Margin="19,55,0,0" VerticalAlignment="Top"/>
@@ -12,8 +12,8 @@
         <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Height="23" Margin="135,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
         <TextBox x:Name="txtSecondName" HorizontalAlignment="Left" Height="23" Margin="135,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
         <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" Margin="135,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
-        <GroupBox Header="Student information" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Height="188" Width="497"/>
-        <Grid HorizontalAlignment="Left" Height="175" Margin="10,134,0,0" VerticalAlignment="Top" Width="497">
+        <GroupBox x:Name="gbStudentInformation" Header="Student information" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Height="188" Width="497"/>
+        <Grid x:Name="gStudentInformation" HorizontalAlignment="Left" Height="175" Margin="10,134,0,0" VerticalAlignment="Top" Width="497">
             <Label Content="Educational degree:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
             <Label Content="Status:" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
             <Label Content="Faculty number:" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top"/>

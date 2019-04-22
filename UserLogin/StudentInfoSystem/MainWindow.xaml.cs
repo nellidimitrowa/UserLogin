@@ -29,7 +29,15 @@ namespace StudentInfoSystem
         private void ClearTextBoxesContent()
         {
 
-            foreach (var item in gbPersonalInformation.Children)
+            foreach (var item in gPersonalInformation.Children)
+            {
+                if (item is TextBox)
+                {
+                    ((TextBox)item).Text = String.Empty;
+                }
+            }
+
+            foreach (var item in gStudentInformation.Children)
             {
                 if (item is TextBox)
                 {
