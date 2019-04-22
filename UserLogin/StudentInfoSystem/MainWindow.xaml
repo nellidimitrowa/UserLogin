@@ -21,7 +21,7 @@
             <TextBox x:Name="txtEducationalDegree" HorizontalAlignment="Left" Height="23" Margin="124,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
             <TextBox x:Name="txtFacultyNumber" HorizontalAlignment="Left" Height="23" Margin="124,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
             <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" Margin="124,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"/>
-            <TextBox x:Name="txtCouse" HorizontalAlignment="Left" Height="23" Margin="431,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
+            <TextBox x:Name="txtCourse" HorizontalAlignment="Left" Height="23" Margin="431,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
             <TextBox x:Name="txtStream" HorizontalAlignment="Left" Height="23" Margin="431,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
             <TextBox x:Name="txtGroup" HorizontalAlignment="Left" Height="23" Margin="431,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
             <Label Content="Course:" HorizontalAlignment="Left" Margin="377,10,0,0" VerticalAlignment="Top"/>

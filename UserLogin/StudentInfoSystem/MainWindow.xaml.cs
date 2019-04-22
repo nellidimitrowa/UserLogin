@@ -25,7 +25,7 @@ namespace StudentInfoSystem
             InitializeComponent();
         }
 
-        private void ClearTextBoxContent()
+        private void ClearTextBoxesContent()
         {
             txtFirstName.Text = String.Empty;
             txtSecondName.Text = String.Empty;
@@ -35,9 +35,24 @@ namespace StudentInfoSystem
             txtEducationalDegree.Text = String.Empty;
             txtStatus.Text = String.Empty;
             txtFacultyNumber.Text = String.Empty;
-            txtCouse.Text = String.Empty;
+            txtCourse.Text = String.Empty;
             txtStream.Text = String.Empty;
             txtGroup.Text = String.Empty;
+        }
+
+        private void DisableTextBoxes()
+        {
+            txtFirstName.IsEnabled = false;
+            txtSecondName.IsEnabled = false;
+            txtLastName.IsEnabled = false;
+            txtFaculty.IsEnabled = false;
+            txtSpeciality.IsEnabled = false;
+            txtEducationalDegree.IsEnabled = false;
+            txtStatus.IsEnabled = false;
+            txtFacultyNumber.IsEnabled = false;
+            txtCourse.IsEnabled = false;
+            txtStream.IsEnabled = false;
+            txtGroup.IsEnabled = false;
         }
     }
 }
