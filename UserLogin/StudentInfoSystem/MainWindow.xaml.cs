@@ -53,17 +53,21 @@ namespace StudentInfoSystem
 
         private void DisableTextBoxes()
         {
-            txtFirstName.IsEnabled = false;
-            txtSecondName.IsEnabled = false;
-            txtLastName.IsEnabled = false;
-            txtFaculty.IsEnabled = false;
-            txtSpeciality.IsEnabled = false;
-            txtEducationalDegree.IsEnabled = false;
-            txtStatus.IsEnabled = false;
-            txtFacultyNumber.IsEnabled = false;
-            txtCourse.IsEnabled = false;
-            txtStream.IsEnabled = false;
-            txtGroup.IsEnabled = false;
+            foreach (var item in gPersonalInformation.Children)
+            {
+                if (item is TextBox)
+                {
+                    ((TextBox)item).IsEnabled = false;
+                }
+            }
+
+            foreach (var item in gStudentInformation.Children)
+            {
+                if (item is TextBox)
+                {
+                    ((TextBox)item).IsEnabled = false;
+                }
+            }
         }
 
         private void EnableTextBoxes()
