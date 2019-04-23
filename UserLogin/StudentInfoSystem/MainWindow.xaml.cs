@@ -46,10 +46,20 @@ namespace StudentInfoSystem
             }
         }
 
-        //private void ShowStudentInfo()
-        //{
-        //    txtFirstName.Text = 
-        //}
+        private void ShowStudentInfo(Student student)
+        {
+            txtFirstName.Text = student.GetFirstName();
+            txtSecondName.Text = student.GetSecondName();
+            txtLastName.Text = student.GetLastName();
+            txtFaculty.Text = student.GetFaculty();
+            txtSpeciality.Text = student.GetSpeciality();
+            txtEducationalDegree.Text = student.GetEducationalDegree();
+            txtStatus.Text = student.GetStatus();
+            txtFacultyNumber.Text = student.GetFacNum();
+            txtCourse.Text = student.GetCourse().ToString();
+            txtStream.Text = student.GetStream().ToString();
+            txtGroup.Text = student.GetGroup().ToString();
+        }
 
         private void DisableTextBoxes()
         {
