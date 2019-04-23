@@ -17,9 +17,9 @@
             <ImageBrush ImageSource="watermark.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition />
         </Grid.RowDefinitions>
 
