@@ -12,6 +12,9 @@
             <ColumnDefinition />
             <ColumnDefinition Width="230" />
         </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="watermark.png"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
@@ -20,6 +23,7 @@
         </Grid.RowDefinitions>
 
         <!-- People list -->
+        <Label Grid.Column="1">View Expense Report</Label>
         <Border Height="35" Padding="5" Background="#4E87D4" Grid.Column="1" Grid.Row="1">
         <Label VerticalAlignment="Center" Foreground="White"  Grid.Column="1" Grid.Row="1">Names</Label>
         </Border>
