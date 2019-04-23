@@ -11,3 +11,7 @@ D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug\ExpenseIt.csproj.GenerateResource.Cache
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug\ExpenseIt.exe
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug\ExpenseIt.pdb
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug\ExpenseItHome.baml
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug\ExpenseReportPage.baml
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug\ExpenseItHome.g.cs
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\ExpenseIt\obj\Debug\ExpenseReportPage.g.cs
