@@ -6,6 +6,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="ExpenseItHome">
+    
 
     <Grid Margin="10,0,10,10">
         <Grid.ColumnDefinitions>
@@ -23,7 +24,14 @@
         </Grid.RowDefinitions>
 
         <!-- People list -->
-        <Label Grid.Column="1">View Expense Report</Label>
+        <Label Grid.Column="1" FontWeight="Bold" FontSize="22" Foreground="#0066cc">View Expense Report
+            <Label.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
+                    <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>
+                </Style>
+            </Label.Resources>
+        </Label>
         <Border Height="35" Padding="5" Background="#4E87D4" Grid.Column="1" Grid.Row="1">
         <Label VerticalAlignment="Center" Foreground="White"  Grid.Column="1" Grid.Row="1">Names</Label>
         </Border>
