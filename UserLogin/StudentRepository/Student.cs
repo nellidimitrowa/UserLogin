@@ -41,6 +41,11 @@ namespace StudentRepository
             this.lastSemesterFeeDate = lastSemesterFeeDate;
         }
 
+        public string GetFacNum()
+        {
+            return this.facultyNumber;
+        }
+
         public override string ToString()
         {
             return "Names: " + firstName + " " + secondName + " " + lastName + "\nFaculty: " + faculty + "\nSpeciality: " + speciality +

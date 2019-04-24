@@ -1,6 +1,6 @@
 ﻿namespace UserLogin
 {
-    enum UserRole {
+    public enum UserRole {
         ANONYMOUS,
         ADMIN,
         INSPECTOR,
