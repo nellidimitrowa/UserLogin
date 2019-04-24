@@ -27,7 +27,15 @@ namespace UserLogin
 
             User findedUser = (from user in TestUsers
                                where username.Equals(user.username) && password.Equals(user.password)
-                               select user).First();
+                               select user).FirstOrDefault();
+
+            return findedUser;
+        }
+
+        public static User IsUserUsernameCorrect(string username) {
+            User findedUser = (from user in TestUsers
+                               where username.Equals(user.username)
+                               select user).FirstOrDefault();
 
             return findedUser;
         }

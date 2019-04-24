@@ -53,6 +53,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="LogInFormPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LogInFormUsername.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -64,6 +68,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogInFormPassword.xaml.cs">
+      <DependentUpon>LogInFormPassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="LogInFormUsername.xaml.cs">
       <DependentUpon>LogInFormUsername.xaml</DependentUpon>

@@ -18,3 +18,5 @@ D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\o
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\StudentInfoSystem.pdb
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\LogInFormUsername.baml
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\LogInFormUsername.g.cs
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\LogInFormPassword.baml
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\LogInFormPassword.g.cs

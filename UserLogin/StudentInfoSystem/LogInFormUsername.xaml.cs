@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using UserLogin;
 
 namespace StudentInfoSystem
 {
@@ -22,6 +23,21 @@ namespace StudentInfoSystem
         public LogInForm()
         {
             InitializeComponent();
+        }
+
+        private void btnEnterUsername_Click(object sender, RoutedEventArgs e)
+        {
+            if (UserData.IsUserUsernameCorrect(txtUsername.Text) != null)
+            {
+                var logInFormPassword = new LogInFormPassword();
+                logInFormPassword.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("There is no user with this username. Try again.");
+                txtUsername.Text = String.Empty;
+            }
         }
     }
 }
