@@ -16,3 +16,5 @@ D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\o
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\StudentInfoSystem.csproj.GenerateResource.Cache
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\StudentInfoSystem.exe
 D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\StudentInfoSystem.pdb
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\LogInFormUsername.baml
+D:\PROJECTS\C# - Visual Studio\UserLogin\UserLogin\UserLogin\StudentInfoSystem\obj\Debug\LogInFormUsername.g.cs
