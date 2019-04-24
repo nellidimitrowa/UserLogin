@@ -1,4 +1,4 @@
-﻿<Window x:Class="StudentInfoSystem.LogInForm"
+﻿<Window x:Class="StudentInfoSystem.LogInFormUsername"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Log in" Height="300" Width="300">

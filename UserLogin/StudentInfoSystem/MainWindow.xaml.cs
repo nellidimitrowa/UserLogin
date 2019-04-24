@@ -26,7 +26,7 @@ namespace StudentInfoSystem
             InitializeComponent();
         }
 
-        private void ClearTextBoxesContent()
+        public void ClearTextBoxesContent()
         {
 
             foreach (var item in gPersonalInformation.Children)

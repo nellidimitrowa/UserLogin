@@ -18,7 +18,8 @@ namespace StudentRepository
         private static void AddStudents()
         {
             _testStudents.Add(new Student("Nedyalka", "Dimitrova", "Dimitrova", "FKST", "KSI", "bachelor", "certified", "121212605", 3, 1, 47, new DateTime(2019, 02, 01), new DateTime(2019, 02, 15)));
-            _testStudents.Add(new Student("Yordan", "Atanasov", "Radkov", "FMI", "Informatics", "bachelor", "semester graduated", "121314001", 4, 0, 1, new DateTime(2018, 05, 01), new DateTime(2018,02, 15)));
+            _testStudents.Add(new Student("Boyana", "Tencheva", "Dimitrova", "FMI", "Informatics", "bachelor", "semester graduated", "125456456", 4, 0, 1, new DateTime(2018, 05, 01), new DateTime(2018, 02, 15)));
+            _testStudents.Add(new Student("Dimitar", "Georgiev", "Dimitrov", "FKST", "ITI", "bachelor", "certified", "12132155", 4, 1, 51, new DateTime(2019, 02, 02), new DateTime(2019, 02, 16)));
         }
 
         public static Student FindStudentByFacultyNumber(string fakNumber)

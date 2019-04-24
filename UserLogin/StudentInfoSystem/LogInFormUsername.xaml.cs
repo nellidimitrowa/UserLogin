@@ -16,13 +16,23 @@ using UserLogin;
 namespace StudentInfoSystem
 {
     /// <summary>
-    /// Interaction logic for LogInForm.xaml
+    /// Interaction logic for LogInFormUsername.xaml
     /// </summary>
-    public partial class LogInForm : Window
+    public partial class LogInFormUsername : Window
     {
-        public LogInForm()
+        public LogInFormUsername()
         {
             InitializeComponent();
+        }
+
+        public string getUserName()
+        {
+            return txtUsername.Text;
+        }
+
+        public void setUsername(string username)
+        {
+            txtUsername.Text = username;
         }
 
         private void btnEnterUsername_Click(object sender, RoutedEventArgs e)
@@ -31,6 +41,7 @@ namespace StudentInfoSystem
             if (user != null)
             {
                 var logInFormPassword = new LogInFormPassword();
+                setUsername(txtUsername.Text);
                 logInFormPassword.Show();
                 this.Close();
             }

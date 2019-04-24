@@ -17,9 +17,9 @@ namespace UserLogin
 
         private static void ResetTestUserData()
         {
-            _testUsers.Add(new User("nedyalka", "password", "121212605", UserRole.ADMIN, DateTime.Today, DateTime.MaxValue));
-            _testUsers.Add(new User("boyana", "password", "125456456", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
-            _testUsers.Add(new User("dimitar", "password", "12132155", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
+            _testUsers.Add(new User("nedyalka", "123456", "121212605", UserRole.ADMIN, DateTime.Today, DateTime.MaxValue));
+            _testUsers.Add(new User("boyana", "147258", "125456456", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
+            _testUsers.Add(new User("dimitar", "654321", "12132155", UserRole.STUDENT, DateTime.Today, DateTime.MaxValue));
         }
 
         public static User IsUserPassCorrect(string username, string password)

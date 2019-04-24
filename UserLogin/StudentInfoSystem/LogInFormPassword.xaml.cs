@@ -26,7 +26,7 @@ namespace StudentInfoSystem
             InitializeComponent();
         }
 
-        private void btnEnterPassword_Click(object sender, RoutedEventArgs e)
+        public void btnEnterPassword_Click(object sender, RoutedEventArgs e)
         {
             User user = UserData.IsUserPasswordCorrect(txtPassword.Text);
             if(txtPassword.Text == "" || user  == null) 
@@ -38,9 +38,17 @@ namespace StudentInfoSystem
                 var mainWindow = new MainWindow();
                 Student student = StudentRepository.StudentValidation.GetStudentDataByUser(user);
                 mainWindow.Show();
+                mainWindow.ClearTextBoxesContent();
                 mainWindow.ShowStudentInfo(student);
                 this.Close();
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var logInFormUsername = new LogInFormUsername();
+            logInFormUsername.Show();
+            this.Close();
         }
     }
 }
