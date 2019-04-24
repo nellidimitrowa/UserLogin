@@ -7,9 +7,9 @@ using UserLogin;
 
 namespace StudentRepository
 {
-    class StudentValidation
+    public class StudentValidation
     {
-        public Student GetStudentDataByUser (User user) 
+        public static Student GetStudentDataByUser (User user) 
         {
             Student student = StudentData.FindStudentByFacultyNumber(user.facultyNumber);
             if(user.facultyNumber == null || student == null)

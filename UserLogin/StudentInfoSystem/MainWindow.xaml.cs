@@ -46,7 +46,7 @@ namespace StudentInfoSystem
             }
         }
 
-        private void ShowStudentInfo(Student student)
+        public void ShowStudentInfo(Student student)
         {
             txtFirstName.Text = student.firstName;
             txtSecondName.Text = student.secondName;
@@ -80,7 +80,7 @@ namespace StudentInfoSystem
             }
         }
 
-        private void EnableTextBoxes()
+        public void EnableTextBoxes()
         {
             foreach (var item in gPersonalInformation.Children)
             {

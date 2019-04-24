@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using UserLogin;
+using StudentRepository;
 
 namespace StudentInfoSystem
 {
@@ -27,14 +28,17 @@ namespace StudentInfoSystem
 
         private void btnEnterPassword_Click(object sender, RoutedEventArgs e)
         {
-            if(txtPassword.Text == "" || UserData.IsUserPasswordCorrect(txtPassword.Text) == null) 
+            User user = UserData.IsUserPasswordCorrect(txtPassword.Text);
+            if(txtPassword.Text == "" || user  == null) 
             {
                 MessageBox.Show("There is no user with this password. Try again.");
                 txtPassword.Text = String.Empty;
             } else
             {
                 var mainWindow = new MainWindow();
+                Student student = StudentRepository.StudentValidation.GetStudentDataByUser(user);
                 mainWindow.Show();
+                mainWindow.ShowStudentInfo(student);
                 this.Close();
             }
         }
