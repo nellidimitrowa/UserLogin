@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using UserLogin;
 
 namespace StudentInfoSystem
 {
@@ -22,6 +23,20 @@ namespace StudentInfoSystem
         public LogInFormPassword()
         {
             InitializeComponent();
+        }
+
+        private void btnEnterPassword_Click(object sender, RoutedEventArgs e)
+        {
+            if(txtPassword.Text == "" || UserData.IsUserPasswordCorrect(txtPassword.Text) == null) 
+            {
+                MessageBox.Show("There is no user with this password. Try again.");
+                txtPassword.Text = String.Empty;
+            } else
+            {
+                var mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
         }
     }
 }
