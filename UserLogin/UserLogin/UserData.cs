@@ -40,14 +40,6 @@ namespace UserLogin
             return findedUser;
         }
 
-        public static User IsUserPasswordCorrect(string password)
-        {
-            User findedUser = (from user in TestUsers
-                               where password.Equals(user.password)
-                               select user).FirstOrDefault();
-
-            return findedUser;
-        }
         public static void SetUserActiveTo(int userIndex, DateTime newDate) 
         {
             _testUsers[userIndex].activeDate = newDate;

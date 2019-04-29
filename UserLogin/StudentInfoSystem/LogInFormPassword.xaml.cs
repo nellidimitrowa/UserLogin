@@ -28,7 +28,6 @@ namespace StudentInfoSystem
 
         public void btnEnterPassword_Click(object sender, RoutedEventArgs e)
         {
-            LogInFormUsername loginFormUsername = new LogInFormUsername();
             User user = UserData.IsUserPassCorrect(LogInFormUsername.username.Last(), txtPassword.Text);
             if(txtPassword.Text == "" || user  == null) 
             {
