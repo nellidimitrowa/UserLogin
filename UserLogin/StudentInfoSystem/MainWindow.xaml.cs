@@ -98,5 +98,12 @@ namespace StudentInfoSystem
                 }
             }
         }
+
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            LogInFormUsername loginFormUsername = new LogInFormUsername();
+            loginFormUsername.Show();
+            this.Close();
+        }
     }
 }

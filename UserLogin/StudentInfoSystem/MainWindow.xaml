@@ -37,6 +37,7 @@
             <Label  Grid.Column="1" Grid.Row="0" Content="Course:" HorizontalAlignment="Left" Margin="377,10,0,0" VerticalAlignment="Top"/>
             <Label  Grid.Column="1" Grid.Row="0" Content="Stream:" HorizontalAlignment="Left" Margin="376,38,0,0" VerticalAlignment="Top"/>
             <Label  Grid.Column="1" Grid.Row="0" Content="Group:" HorizontalAlignment="Left" Margin="377,64,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="btnLogOut" Content="Log out" HorizontalAlignment="Left" Margin="377,132,0,0" VerticalAlignment="Top" Width="110" Height="33" Click="btnLogOut_Click"/>
         </Grid>
         <Label  Grid.Column="1" Grid.Row="0" Content="Faculty:" HorizontalAlignment="Left" Margin="19,140,0,0" VerticalAlignment="Top"/>
         <Label  Grid.Column="1" Grid.Row="0" Content="Speciality:" HorizontalAlignment="Left" Margin="19,171,0,0" VerticalAlignment="Top"/>
