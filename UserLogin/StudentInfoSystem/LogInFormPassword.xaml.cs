@@ -28,7 +28,8 @@ namespace StudentInfoSystem
 
         public void btnEnterPassword_Click(object sender, RoutedEventArgs e)
         {
-            User user = UserData.IsUserPasswordCorrect(txtPassword.Text);
+            LogInFormUsername loginFormUsername = new LogInFormUsername();
+            User user = UserData.IsUserPassCorrect(LogInFormUsername.username.Last(), txtPassword.Text);
             if(txtPassword.Text == "" || user  == null) 
             {
                 MessageBox.Show("There is no user with this password. Try again.");

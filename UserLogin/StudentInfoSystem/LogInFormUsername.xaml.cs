@@ -20,19 +20,12 @@ namespace StudentInfoSystem
     /// </summary>
     public partial class LogInFormUsername : Window
     {
+        public static List<string> username = new List<string>();
+        
+
         public LogInFormUsername()
         {
             InitializeComponent();
-        }
-
-        public string getUserName()
-        {
-            return txtUsername.Text;
-        }
-
-        public void setUsername(string username)
-        {
-            txtUsername.Text = username;
         }
 
         private void btnEnterUsername_Click(object sender, RoutedEventArgs e)
@@ -40,8 +33,8 @@ namespace StudentInfoSystem
             User user = UserData.IsUserUsernameCorrect(txtUsername.Text);
             if (user != null)
             {
+                username.Add(txtUsername.Text);
                 var logInFormPassword = new LogInFormPassword();
-                setUsername(txtUsername.Text);
                 logInFormPassword.Show();
                 this.Close();
             }
