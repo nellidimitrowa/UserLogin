@@ -20,6 +20,8 @@ namespace ExpenseIt
     /// </summary>
     public partial class ExpenseItHome : Page
     {
+        public DateTime LastChecked { get; set; } 
+
         public ExpenseItHome()
         {
             InitializeComponent();
