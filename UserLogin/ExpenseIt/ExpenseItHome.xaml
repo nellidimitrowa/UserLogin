@@ -66,7 +66,13 @@
         <Border Height="35" Padding="5" Background="#4E87D4" Grid.Column="1" Grid.Row="1">
         <Label VerticalAlignment="Center" Foreground="White"  Grid.Column="1" Grid.Row="1">Names</Label>
         </Border>
-        <ListBox Name="peopleListBox"  Grid.Column="1" Grid.Row="2" ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"></ListBox>
+        <ListBox Name="peopleListBox"  Grid.Column="1" Grid.Row="2" ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding XPath=@Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Label Grid.Column="0" Grid.Row="3" FontWeight="Bold" Content="{Binding Path=LastChecked}"/>
 
         <!-- View report button -->
