@@ -6,7 +6,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="ExpenseItHome">
-    
+
 
     <Grid Margin="10,0,10,10">
         <Grid.Resources>
@@ -63,10 +63,10 @@
                 </Style>
             </Label.Resources>
         </Label>
-        <Border Height="35" Padding="5" Background="#4E87D4" Grid.Column="1" Grid.Row="1">
-        <Label VerticalAlignment="Center" Foreground="White"  Grid.Column="1" Grid.Row="1">Names</Label>
+        <Border Height="35" Padding="5" Background="#4E87D4" Grid.Column="1" Grid.Row="1" Margin="0,0,0,38">
+            <Label VerticalAlignment="Center" Foreground="White"  Grid.Column="1" Grid.Row="1">Names</Label>
         </Border>
-        <ListBox Name="peopleListBox"  Grid.Column="1" Grid.Row="2" ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}">
+        <ListBox Name="peopleListBox"  Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}" Margin="0,35,0,0" Grid.RowSpan="2">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Label Content="{Binding XPath=@Name}"/>
@@ -76,7 +76,7 @@
         <Label Grid.Column="0" Grid.Row="3" FontWeight="Bold" Content="{Binding Path=LastChecked}"/>
 
         <!-- View report button -->
-        <Button Margin="0,10,0,0" Grid.Column="1" Grid.Row="3" Width="125" Height="25" HorizontalAlignment="Right" Click="Button_Click_1" Content="{Binding ElementName=peopleListBox,  Path=SelectedItem.Attributes[Name]}"></Button>
-        <Button Margin="0,10,0,0" Grid.Column="1" Grid.Row="3" Width="125" Height="25" HorizontalAlignment="Left" Click="Button_Click">Greeting</Button>
+        <Button Margin="0,10,0,38" Grid.Column="1" Grid.Row="3" Width="110" Height="25" HorizontalAlignment="Right" Click="Button_Click_1" Content="{Binding ElementName=peopleListBox,  Path=SelectedItem.Attributes[Name]}"></Button>
+        <Button Margin="0,10,0,38" Grid.Column="1" Grid.Row="3" Width="110" Height="25" HorizontalAlignment="Left" Click="Button_Click">Greeting</Button>
     </Grid>
 </Page>
