@@ -25,7 +25,8 @@ namespace ExpenseIt
         public ExpenseItHome()
         {
             InitializeComponent();
-            LastChecked = DateTime.Now; 
+            LastChecked = DateTime.Now;
+            this.DataContext = this;
         } 
 
         private void Button_Click(object sender, RoutedEventArgs e)
