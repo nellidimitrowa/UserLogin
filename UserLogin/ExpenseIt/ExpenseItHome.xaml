@@ -33,6 +33,9 @@
                         <Person Name="Theo" Department="Marketing">
                             <Expense ExpenseType="Dinner" ExpenseAmount="100" />
                         </Person>
+                        <Person Name="James" Department="Engineering">
+                            <Expense ExpenseType="Software" ExpenseAmount="600" />
+                        </Person>
                     </Expenses>
                 </x:XData>
             </XmlDataProvider>
