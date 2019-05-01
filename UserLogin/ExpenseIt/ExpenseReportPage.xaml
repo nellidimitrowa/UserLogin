@@ -29,7 +29,8 @@
         <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" FontWeight="Bold" FontSize="20" Foreground="#4E87D4" Content="{StaticResource strTitle}"></Label>
 
         <Label Grid.Column="1" Grid.Row="1" FontWeight="Bold" VerticalAlignment="Center" >Name:</Label>
-        <Label Grid.Column="1" Grid.Row="2" FontWeight="Bold" VerticalAlignment="Center" >Department:</Label>
+        <Label Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding XPath=@Name}"></Label>
+        <Label Grid.Column="1" Grid.Row="1" FontWeight="Bold" VerticalAlignment="Center" Margin="0,75,0,12" >Department:</Label>
 
         <Grid Grid.Column="1" Grid.Row="3" Height="Auto" >
             <Grid.ColumnDefinitions>

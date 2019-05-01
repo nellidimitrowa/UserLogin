@@ -24,5 +24,11 @@ namespace ExpenseIt
         {
             InitializeComponent();
         }
+
+        public ExpenseReportPage(object data)
+            : this()
+        {
+            this.DataContext = data;
+        }
     }
 }

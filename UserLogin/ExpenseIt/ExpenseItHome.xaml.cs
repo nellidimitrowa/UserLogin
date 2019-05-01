@@ -23,7 +23,7 @@ namespace ExpenseIt
         public ExpenseItHome()
         {
             InitializeComponent();
-        }
+        } 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -36,7 +36,7 @@ namespace ExpenseIt
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ExpenseReportPage expenseReportPage = new ExpenseReportPage(); 
+            ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem); 
             this.NavigationService.Navigate(expenseReportPage); 
         }
     }
